@@ -2,9 +2,10 @@
   "name": "nico-toff-pro-website",
   "version": "0.1.0",
   "description": "A pro website that serves as a resume and portfolio",
-  "main": "/bin/www",
+  "main": "./bin/www",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "dev": "nodemon -e js,ejs,json"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
   },
   "homepage": "https://github.com/NicoToff/ProWebsite#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1"
   }
 }
