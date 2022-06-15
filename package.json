@@ -1,0 +1,30 @@
+{
+  "name": "nico-toff-pro-website",
+  "version": "0.1.0",
+  "description": "A pro website that serves as a resume and portfolio",
+  "main": "/bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoToff/ProWebsite.git"
+  },
+  "keywords": [
+    "resume",
+    "nicotoff",
+    "Nicolas",
+    "Toffolo",
+    "backend",
+    "webdev"
+  ],
+  "author": "Nicolas Toffolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoToff/ProWebsite/issues"
+  },
+  "homepage": "https://github.com/NicoToff/ProWebsite#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
