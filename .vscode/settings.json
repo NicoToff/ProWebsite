@@ -1,0 +1,7 @@
+{
+    "css.validate": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
+        "editor.formatOnSave": false
+    }
+}
