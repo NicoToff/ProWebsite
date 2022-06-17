@@ -1,8 +1,7 @@
 "use strict";
-const express = require("express");
-const router = express.Router();
+const router = require("express").Router();
 
-let loading = "20";
+let loading = "25";
 
 router.get("/", function (req, res, next) {
     res.status(200).render("index", { loading });
