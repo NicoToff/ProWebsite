@@ -1,6 +1,6 @@
 {
   "name": "nico-toff-pro-website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A pro website that serves as a resume and portfolio",
   "main": "./bin/www",
   "scripts": {
