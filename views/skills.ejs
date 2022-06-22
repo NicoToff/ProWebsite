@@ -1,0 +1,26 @@
+<div class="container">
+    <main class="row">
+        <picture class="col-lg">
+            <% images.forEach(image => { %>
+                <img class="m-3" class="img-fluid" style="width: 7em; max-height: 7em;"
+                     src="images/skills/<%= image %>">
+            <% }) %>
+        </picture>
+        <article class="col-lg">
+            <h1 class="text-center mt-5 mb-3">A trove of knowledge</h1>
+            <p>One thing is clear: I'm passionate about IT. I find the endless pool of programming languages and tools
+                that exist in our day and age simply marvelous. It's impossible to master everything, but so far
+                I've focused a big chunk of my efforts on <strong class="text-success">Node.js</strong>. You can
+                do so much with <strong class="text-success">Node.js</strong> and its myriad of packages through
+                <strong class="text-danger">npm</strong> ! 
+            </p>
+            <img src="images/man-at-work.svg" style="max-width: 60%;" class="img-fluid mt-5 mx-auto d-block" />
+            <h2 class="text-center m-4">Site under construction</h2>
+            <p class="text-center">Come back later for more ;)</p>
+        </article>
+    </main>
+</div>
+
+<script>
+    document.querySelector("#nav-skills").classList.add("active");
+</script>

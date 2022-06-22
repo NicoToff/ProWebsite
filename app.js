@@ -3,6 +3,8 @@ const path = require("path");
 const app = express();
 
 const indexRouter = require("./routes/index");
+const skillsRouter = require("./routes/skills");
+const contactRouter = require("./routes/contact");
 const expressLayouts = require("express-ejs-layouts");
 
 app.use(express.json());
@@ -14,5 +16,7 @@ app.set("layout", "layouts/main");
 app.use(expressLayouts);
 
 app.use("/", indexRouter);
+app.use("/skills", skillsRouter);
+app.use("/contact", contactRouter);
 
 module.exports = { app };
