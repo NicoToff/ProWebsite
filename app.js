@@ -5,6 +5,7 @@ const app = express();
 const indexRouter = require("./routes/index");
 const skillsRouter = require("./routes/skills");
 const contactRouter = require("./routes/contact");
+const projectHelhaRevisionRouter = require("./routes/helha-revision");
 const expressLayouts = require("express-ejs-layouts");
 
 app.use(express.json());
@@ -18,5 +19,6 @@ app.use(expressLayouts);
 app.use("/", indexRouter);
 app.use("/skills", skillsRouter);
 app.use("/contact", contactRouter);
+app.use("/helha-revision", projectHelhaRevisionRouter);
 
 module.exports = { app };
