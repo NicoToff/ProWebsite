@@ -1,0 +1,98 @@
+<div class="container">
+    <main class="row">
+        <article>
+            <h1 class="text-center mt-5 mb-3">Things I like</h1>
+            <p class="text-center">Apart from IT, there are many other things I'm fond of.</p>
+                <section class="row">
+                    <h2 class="mt-3">Tabletop Roleplaying Games</h2>
+                    <div class="col-lg">
+                        <p>
+                            I've been playing TRPGs since I'm a teenager. The game system is unimportant, whether it is
+                            <a href="https://dnd.wizards.com/">Dungeons &amp; Dragons</a>
+                            or <a href="https://hankerinferinale.wixsite.com/icrpg">ICRPG</a>, the essence of TRPGs
+                            lies in sheer creativity and storytelling.
+                            My friends and I have conjured up countless tales and universes over the years.
+                            You'd think people can get tired of gathering around a table to make up stories with one another,
+                            but apart from a few breaks, I've never become bored of mastering or playing role playing games.
+                        </p>
+                    </div>
+                    <div class="col-lg text-center">
+                        <picture>
+                            <% dice.forEach(die => { %>
+                                <img src="images/hobbies/dice/<%= die %>"
+                                     class="img-fluid m-3"
+                                     style="width: 20%;">
+                            <% }) %>
+                        </picture>
+                    </div>
+                </section>
+                <section class="row">
+                    <h2 class="mt-3">Videos Games</h2>
+                    <div class="col-lg text-center">
+                        <picture>
+                            <div>
+                                <a href="https://www.pathofexile.com/" target="_blank">
+                                    <img src="images/hobbies/poe.png" class="img-fluid" style="max-height: 15vw;" alt="Path of Exile logo">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.supergiantgames.com/games/hades/" target="_blank">
+                                    <img src="images/hobbies/hades-small.png" class="img-fluid" style="max-width: 30vw;" alt="Hades logo">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.satisfactorygame.com/" target="_blank">
+                                    <img src="images/hobbies/satisfactory.webp" class="img-fluid m-4" style="max-width: 30vw;" alt="Satisfactory logo">
+                                </a>
+                            </div>
+                        </picture>
+                    </div>
+                    <div class="col-lg">
+                        <p>
+                            Sometimes, making up stories can be tiring. Video games are a great source of story-driven
+                            entertainment that allow a lot of unwinding. Some would say it is therapeutic to kill monsters for the 
+                            salvation of <a href="https://pathofexile.fandom.com/wiki/Wraeclast" target="_blank">Wraeclast</a>
+                            or to free yourself from the shackles of
+                            the <a href="https://hades.fandom.com/wiki/Hades_(game)" target="_blank">Underworld</a>.
+                        </p>
+                        <p>
+                            To me, having room to be creative is very important, even in a video game. Fine-tuning a 
+                            character's build to have it match my own tastes is an incredibly important aspect.
+                            In a very different genre, I love sandbox games like 
+                            <a href="https://www.satisfactorygame.com/" target="_blank">Satisfactory</a>
+                            or 
+                            <a href="https://www.minecraft.net/en-us" target="_blank">Minecraft</a>, 
+                            because they don't confine you to a given set of objectives;
+                            you make your own decisions and play the game the way you want.
+                        </p>
+                    </div>
+                </section>
+                <section class="row">
+                    <h2 class="mt-3">Movies and series</h2>
+                    <div class="col-lg">
+                        <p>
+                            There is a reason I chose to work in the subtitling industry: I love cinema.
+                            When I was young, I was frustrated not to be able to see all the movies I wanted. VHS
+                            were expensive and going to the theatre was impractical. I couldn't be happier
+                            when the miracle of the internet happened and streaming services made movies and
+                            series more and more accessible.
+                        </p>
+                        <p>
+                            I can enjoy absolutely any genre as long as the movie has a good story and photography.
+                            Among my favorite directors, in no particular order, I would name Christopher Nolan,
+                            Quentin Tarantino, George Lucas, Robert Rodriguez, James Cameron and the Wachowskis.
+                        </p>
+                    </div>
+                    <div class="col-lg text-center">
+                        <picture>
+                            <img src="images/hobbies/cinema.svg" class="img-fluid" style="max-width: 20vw;" alt="A camera">
+                        </picture>
+                    </div>
+                </section>
+        </article>
+    </main>
+</div>
+
+<script>
+    document.querySelector("#nav-hobbies").classList.add("active");
+</script>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75.68" height="74.72">
+	<g id="dp_dp001" transform="matrix(1,0,0,1,-643.443,-141.177)">
+		<path id="dp_path002" fill="#b513eb" fill-rule="evenodd" stroke="#b513eb" stroke-width="1.33333" d="M 645.816,158.775 L 689.44,171.177 L 698.484,142.433 Z "/>
+		<path id="dp_path003" fill="#b513eb" fill-rule="evenodd" stroke="#b513eb" stroke-width="1.33333" d="M 691.68,171.817 L 700.32,143.337 L 717.371,191.412 Z "/>
+		<path id="dp_path004" fill="#b513eb" fill-rule="evenodd" stroke="#b513eb" stroke-width="1.33333" d="M 717.76,194.217 L 690.4,173.737 L 666.133,214.62 Z "/>
+		<path id="dp_path005" fill="#b513eb" fill-rule="evenodd" stroke="#b513eb" stroke-width="1.33333" d="M 664.424,213.259 L 688.48,173.097 L 645.045,160.869 Z "/>
+	</g>
+	<text id="dp_text001" transform="matrix(-0.0550681,-0.685479,0.996769,-0.0803204,41.6943,20.9562)" xml:space="preserve" fill="white" font-family="Arial" font-size="28" font-weight="400" x="0" y="0">8</text>
+	<text id="dp_text002" transform="matrix(-0.573462,0.36013,-0.533047,-0.846087,58.836,18.3685)" xml:space="preserve" fill="white" font-family="Arial" font-size="24" font-weight="400" x="0" y="0">5</text>
+	<text id="dp_text003" transform="matrix(0.0512408,0.814202,-0.998006,0.0631196,41.8438,48.8022)" xml:space="preserve" fill="white" font-family="Arial" font-size="24" font-weight="400" x="0" y="0">3</text>
+	<text id="dp_text004" transform="matrix(0.53099,-0.335527,0.544451,0.838881,21.2231,49.9862)" xml:space="preserve" fill="white" font-family="Arial" font-size="26" font-weight="400" x="0" y="0">2</text>
+</svg>
