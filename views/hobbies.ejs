@@ -4,7 +4,7 @@
             <h1 class="text-center mt-5 mb-3">Things I like</h1>
             <p class="text-center">Apart from IT, there are many other things I'm fond of.</p>
                 <section class="row">
-                    <h2 class="mt-3">Tabletop Roleplaying Games</h2>
+                    <h2 class="mt-5">Tabletop Roleplaying Games</h2>
                     <div class="col-lg">
                         <p>
                             I've been playing TRPGs since I'm a teenager. The game system is unimportant, whether it is
@@ -27,16 +27,16 @@
                     </div>
                 </section>
                 <section class="row">
-                    <h2 class="mt-3">Videos Games</h2>
+                    <h2 class="mt-5">Videos Games</h2>
                     <div class="col-lg text-center">
                         <picture>
-                            <a href="https://www.pathofexile.com/" target="_blank">
+                            <a href="https://www.pathofexile.com/" target="_blank" style="text-decoration: none;">
                                 <img src="images/hobbies/poe.png" class="img-fluid" style="width:40%;max-width: 18vw;" alt="Path of Exile logo">
                             </a>
-                            <a href="https://www.supergiantgames.com/games/hades/" target="_blank">
+                            <a href="https://www.supergiantgames.com/games/hades/" target="_blank" style="text-decoration: none;">
                                 <img src="images/hobbies/hades-small.png" class="img-fluid" style="width:70%;max-width: 25vw;" alt="Hades logo">
                             </a>
-                            <a href="https://www.satisfactorygame.com/" target="_blank">
+                            <a href="https://www.satisfactorygame.com/" target="_blank" style="text-decoration: none;">
                                 <img src="images/hobbies/satisfactory.webp" class="img-fluid" style="width:80%;max-width: 30vw;" alt="Satisfactory logo">
                             </a>
                         </picture>
@@ -66,7 +66,7 @@
                     </div>
                 </section>
                 <section class="row">
-                    <h2 class="mt-3">Movies and series</h2>
+                    <h2 class="mt-5">Movies and series</h2>
                     <div class="col-lg">
                         <p>
                             There is a reason I chose to work in the subtitling industry: I love cinema.
@@ -88,7 +88,7 @@
                     </div>
                 </section>
                 <section class="row">
-                    <h2 class="mt-3">Cooking</h2>
+                    <h2 class="mt-5">Cooking</h2>
                     <div class="col-lg text-center">
                         <picture>
                             <img src="images/hobbies/food/al-treno.jpg" class="img-fluid m-3" style="width: 40%; max-width:20vw">
@@ -110,6 +110,36 @@
                             naturally than switching to IT. If it wasn't for the poor HoReCa working conditions,
                             maybe I'd be working in as a chef in a restaurant right now :)
                         </p>                        
+                    </div>
+                </section>
+                <section class="row">
+                    <h2 class="mt-5">Pop science</h2>
+                    <div class="col-lg">
+                        <p>
+                            Whether it is about IT or not, I enjoy learning. When I have a bit of time to spare,
+                            I like watching good-quality content on YouTube on various topics, such as world news,
+                            documentaries, concerts, but for the most part the videos I watch are about pop science.
+                        </p>
+                        <p>
+                            In our day and age, the collective amount of knowledge humans managed to gather is mind-blowing.
+                            It's impossible to learn everything in a single life. However, even if I know very well that 
+                            I'm never going to be an expert in astrophysics, chemistry, civil engineering or logistics, that 
+                            doesn't mean I can't learn a bit about those.
+                        </p>
+                        <p>
+                            Here are links to my some of my current favorite YouTube channels.
+                        </p>
+                    </div>
+                    <div class="col-lg text-center">
+                        <picture>
+                            <% channels.forEach(channel => { %>
+                                <a href="<%= channel.path %>" style="text-decoration: none;">
+                                    <img src="images/hobbies/pop-science/<%= channel.image %>"
+                                     class="img-fluid"
+                                     style="width: 17%; margin: 0.5%;">
+                                </a>
+                            <% }) %>
+                        </picture>
                     </div>
                 </section>
 
