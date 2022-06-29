@@ -18,7 +18,6 @@ router.get("/", async function (req, res, next) {
             path: channelUrls[i],
         });
     });
-    console.log(channels);
 
     res.status(200).render("hobbies", { dice, channels });
 });
