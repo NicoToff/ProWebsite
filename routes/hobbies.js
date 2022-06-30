@@ -12,7 +12,7 @@ router.get("/", async function (req, res, next) {
     // Sending channel images and informations
     const channelsImages = await fs.readdir(popSciencePath); // All images are there
     let channelUrls = await fs.readFile(urlSciencePath); // URLs to channels are stored in this file
-    channelUrls = channelUrls?.toString()?.split("\r\n");
+    channelUrls = channelUrls?.toString()?.split(";");
     const channels = [];
     channelsImages.forEach((image, i) => {
         channels.push({
@@ -26,3 +26,6 @@ router.get("/", async function (req, res, next) {
 });
 
 module.exports = router;
+/*
+https://www.youtube.com/c/SciShowhttps://www.youtube.com/c/inanutshellhttps://www.youtube.com/c/ScienceClichttps://www.youtube.com/c/TomScottGohttps://www.youtube.com/user/Computerphilehttps://www.youtube.com/c/BaladeMentaleChainehttps://www.youtube.com/c/Voxhttps://www.youtube.com/c/Wendoverproductionshttps://www.youtube.com/c/ScienceEtonnantehttps://www.youtube.com/c/VICEhttps://www.youtube.com/c/PowerCertAnimatedVideoshttps://www.youtube.com/c/JustHaveaThink
+*/
