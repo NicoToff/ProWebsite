@@ -1,6 +1,5 @@
 "use strict";
 const router = require("express").Router();
-const { url } = require("inspector");
 const path = require("path");
 const fs = require("fs").promises;
 const dicePath = path.join(__dirname, "../public/images/hobbies/dice");
@@ -13,13 +12,13 @@ router.get("/", async function (req, res, next) {
     // Sending channel images and informations
     const channelsImages = await fs.readdir(popSciencePath); // All images are there
     let channelUrls = await fs.readFile(urlSciencePath); // URLs to channels are stored in this file
-    channelUrls = channelUrls.toString().split("\r\n");
+    channelUrls = channelUrls?.toString()?.split("\r\n");
     const channels = [];
     channelsImages.forEach((image, i) => {
         channels.push({
             image,
             path: channelUrls[i],
-            name: channelUrls[i].split("/").pop(), // Gets last element of the URL
+            name: channelUrls[i]?.split("/")?.pop(), // Gets last element of the URL
         });
     });
 
