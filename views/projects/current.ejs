@@ -1,4 +1,49 @@
-<%- include ("../partials/under_construction") %>
+<main class="container">
+    <article class="row">
+        <h1 class="text-center mt-4 mb-3">Current Projects</h1>
+        <div class="col-lg mt-3">
+            <h2>Home-made alarm system</h2>
+            <p>
+                I like to play around with all sorts of tech-related stuff.
+                Among my current projects, I'm trying to build a
+                <a href="/projects/alarm">simple alarm system for my house</a>.
+            </p>
+        </div>
+        <div class="col-lg mt-3">
+            <h2>HELHa EEE Explorer</h2>
+            <p>
+                I've also been trusted by the HELHa with a summer task: the Quality Team needs a proper database
+                and UI to assess data collected through the many polls (<em>Évaluations des Enseignants par les Étudiants</em>, or EEE)
+                they submitted to students in the past years.
+            </p>
+        </div>
+    </article>
+    <article class="row">
+        <div class="col-lg mt-3">
+            <h2>Pi-Hole</h2>
+            <p>
+                Data collection is at the heart of the web as we know it. Many websites and apps are free of use 
+                solely because the users' habits are scrutinised to be translated into market analyses. While this
+                costless model might seem convinient, I think we should be very wary of the kind of information we 
+                share with big companies. In many ways, Pi-Hole allows me to take back control over the data shared
+                by my household.
+            </p>
+            <p>
+                Pi-Hole describes itself as a <q>Network-wide Ad Blocking</q> software, but it's much more than that.
+                It works as a private DNS that blocks any unwanted domain, using blacklists or RegEx filters. I think
+                it's a handy lightweight tool to have for any tech enthusiast. It runs on basically any Raspberry, so 
+                the cost of entry is very low.
+            </p>
+            <p>
+                I highly encourage anyone interested in a such a tool to check out Pi-Hole's website
+                for more information.
+            </p>
+        </div>
+        <div class="col-lg">
+            <iframe src="https://pi-hole.net/" frameborder="0" style="width: 100%; height: 40vw;"></iframe>
+        </div>
+    </article>
+</main>
 
 <script>
     document.querySelector("#nav-projects").classList.add("active");
