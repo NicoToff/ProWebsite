@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const { visitorDatabase } = require("./modules/visitorDatabase");
+//const { visitorDatabase } = require("./modules/visitorDatabase");
 
 const indexRouter = require("./routes/index");
 const skillsRouter = require("./routes/skills");
@@ -18,7 +18,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.set("layout", "layouts/main");
 app.use(expressLayouts);
-app.use(visitorDatabase);
+//app.use(visitorDatabase);
 
 app.use("/", indexRouter);
 app.use("/skills", skillsRouter);
