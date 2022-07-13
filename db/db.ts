@@ -1,8 +1,7 @@
-"use strict";
-const mysql = require("mysql2");
+import mysql from "mysql2";
 require("dotenv").config(); // This loads the .env variables into the process.env
 
-const db = mysql.createPool({
+export const db = mysql.createPool({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
@@ -13,6 +12,4 @@ const db = mysql.createPool({
     queueLimit: 0,
 });
 
-db.on("error", err => console.log("Connection to DB is off\n" + err));
-
-module.exports = { db };
+// db.on("error", err => console.log("Connection to DB is off\n" + err));

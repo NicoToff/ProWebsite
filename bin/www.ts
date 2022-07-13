@@ -1,11 +1,11 @@
-const http = require("http");
-const { app } = require("../app");
+import http from "http";
+import { app } from "../app";
 const server = http.createServer(app);
 const port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
 server.listen(port);
 
-function normalizePort(val) {
+function normalizePort(val: string) {
     var port = parseInt(val, 10);
 
     if (isNaN(port)) {

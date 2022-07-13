@@ -1,6 +1,7 @@
-const { db } = require("../db/db");
+import { Request, Response, NextFunction } from "express";
+import { db } from "../db/db";
 
-const visitorDatabase = async (req, res, next) => {
+export const visitorDatabase = async (req: Request, res: Response, next: NextFunction) => {
     // #region Creating or Retrieving visitor
     const visitorIpAddress = req.ip;
 
@@ -44,7 +45,5 @@ const visitorDatabase = async (req, res, next) => {
     const now = new Date(Date.now());
     await db.promise().query(`INSERT INTO timestamp (value, pageSeen_id) VALUES (?,?)`, [now, pageSeenId]);
     // #endregion
-    next();
+    return next();
 };
-
-module.exports = { visitorDatabase };
