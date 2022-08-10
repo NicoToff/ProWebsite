@@ -1,4 +1,5 @@
 const { db } = require("../db/db");
+const { generateUUID } = require("./helperFunctions");
 
 const visitorDatabase = async (req, res, next) => {
     // #region Creating or Retrieving visitor's UUID
