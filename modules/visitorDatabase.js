@@ -1,22 +1,18 @@
 const { db } = require("../db/db");
 
 const visitorDatabase = async (req, res, next) => {
-    // #region Creating or Retrieving visitor
-    const visitorIpAddress = req.ip;
+    // #region Creating or Retrieving visitor's UUID
+    const visitorUuid = req.body.uuid; // TODO Need to store this into a cookie
 
-    if (visitorIpAddress === "::1") {
+    if (visitorUuid === "::1") {
         return next();
     }
 
-    let [[visitor]] = await db
-        .promise()
-        .query(`SELECT * FROM visitor WHERE ipAddress = ?`, [visitorIpAddress]);
+    let [[visitor]] = await db.promise().query(`SELECT * FROM visitor WHERE uuid = ?`, [visitorUuid]);
 
     let visitorId;
     if (visitor == null) {
-        const [result] = await db
-            .promise()
-            .query(`INSERT INTO visitor (ipAddress) VALUES (?)`, [visitorIpAddress]);
+        const [result] = await db.promise().query(`INSERT INTO visitor (uuid) VALUES (?)`, [visitorUuid]);
         visitorId = result.insertId;
     } else {
         visitorId = visitor.id;
